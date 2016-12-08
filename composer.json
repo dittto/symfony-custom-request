@@ -1,0 +1,17 @@
+{
+  "name" : "dittto/symfony-custom-request",
+  "description" : "Allows use of custom requests in controllers",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Nick Stacey",
+    "email" : "nick@ditt.to"
+  }],
+  "keywords" : ["controller request"],
+  "license" : ["MIT"],
+  "require" : {
+  },
+  "autoload" : {
+    "psr-0" : {"Dittto\\CustomRequestBundle" : ""}
+  },
+  "target-dir" : "Dittto/CustomRequestBundle"
+}
