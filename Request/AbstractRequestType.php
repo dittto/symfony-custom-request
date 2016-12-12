@@ -11,10 +11,10 @@ abstract class AbstractRequestType implements RequestTypeInterface
     {
         $this->request = $request;
 
-        return clone $this;
+        return $this;
     }
 
-    public function getOriginalRequest():Request
+    public function getOriginalRequest():?Request
     {
         return $this->request;
     }

@@ -4,24 +4,16 @@ namespace Dittto\CustomRequestBundle\Request;
 use Dittto\CustomRequestBundle\Request\Filter\RequestFilterInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\ParamConverterInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 class RequestParameterConverter implements ParamConverterInterface
 {
-    private $container;
-
     private $supportedTypes = [];
 
     /**
      * @var RequestFilterInterface[]
      */
     private $requestFilters = [];
-
-    public function __construct(ContainerInterface $container)
-    {
-        $this->container = $container;
-    }
 
     public function apply(Request $request, ParamConverter $configuration)
     {

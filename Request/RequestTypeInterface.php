@@ -7,7 +7,7 @@ interface RequestTypeInterface
 {
     public function setOriginalRequest(Request $request):RequestTypeInterface;
 
-    public function getOriginalRequest():Request;
+    public function getOriginalRequest():?Request;
 
     public function validate():bool;
 }
