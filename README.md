@@ -72,7 +72,7 @@ Slots in local configs seem to always install before vendor-defined configs, so 
 ```yaml
 services:
     override_exception_on_failed_get:
-        class: Ditto\CustomRequestBundle\Request\Filter\NullFilterRequest
+        class: Dittto\CustomRequestBundle\Request\Filter\NullFilterRequest
         tags: [ { name: dittto.request_filter, slot: 10 } ]
 ```
 
