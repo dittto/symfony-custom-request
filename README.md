@@ -75,7 +75,3 @@ services:
         class: Dittto\CustomRequestBundle\Request\Filter\NullFilterRequest
         tags: [ { name: dittto.request_filter, slot: 10 } ]
 ```
-
-## TODO
-
-- tests
