@@ -1,7 +1,7 @@
 # Symfony custom requests
 
 ## What is it?
-
+ 
 To help accomplish the "Thin controllers, fat models" ideal, this bundle allows you to create custom request objects that you can use for validating your input before it gets to the controller.
 
 You can use these to make sure certain fields are set with certain dynamic values, or validate form data without having to add additional logic to your controller.
